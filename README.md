@@ -4,6 +4,13 @@
 </p>
   
 ```cs
+public GUI()
+        {
+            InitializeComponent();
+            Thread serverping = new Thread(pingservers);
+            serverping.Start();
+        }
+ 
 private void pingservers()
         {
             //Server Status'
